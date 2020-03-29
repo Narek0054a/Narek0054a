@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Մեր դասարանի մասին</title>
+    <style>
+        div#dasacucak,div#mas2  {
+            display: inline-flex;
+        }
+        #dasaran{
+            width:400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Մեր դասարանի մասին X2 </h1>
+    <p>Մեր դասարանում կա 21աշակերտ, 9տղա և 12աղջիկ։<br>
+        Մենք սովորումենք հոմանիտար լեզուներ հոսքում մեր դասղեկն է՝Ա․Արզումանյանը։</p>
+    <div id="dasacucak">
+
+        <ol>
+            Երկուշաբթի
+            <li>Քիմիա</li>
+            <li>Աշխարհագրություն</li>
+            <li>Համաշխարհային պատմ․</li>
+            <li>Ֆիզիկա</li>
+            <li>Ֆիզկուլտուրա</li>
+            <li>Անգլերեն</li>
+            <li>Հայ գրականություն</li>
+        </ol>
+
+        <ol>
+            Երեքշաբթի
+            <li>Անգլերեն</li>
+            <li>Հասարակագիտություն</li>
+            <li>Հանրահաշիվ</li>
+            <li>Հայոց լեզու</li>
+            <li>ՆԶՊ</li>
+            <li>Ռուսաց լեզու</li>
+            <li>Ֆիզկուլտուրա</li>
+        </ol>
+
+        <ol>
+            Չորեքշաբթի
+            <li>Հայոց լեզու</li>
+            <li>Համաշխարհային պատմ․</li>
+            <li>Հայ գրականություն</li>
+            <li>Երկրաչափություն</li>
+            <li>Ռուսաց լեզու</li>
+            <li>Հայոց պատմություն</li>
+
+        </ol>
+
+        <ol>
+            Հինգշաբթի
+            <li>Անգլերեն</li>
+            <li>Հայոց եկեղեցու պատմ</li>
+            <li>Ռուսաց լեզու</li>
+            <li>Կենսաբանություն</li>
+            <li>Ֆիզկուլտուրա</li>
+            <li>Հանրահաշիվ</li>
+            <li>Հայ գրականություն</li>
+        </ol>
+
+        <ol>
+            Ուրբաթ
+            <li>Կենսաբանություն</li>
+            <li>Անգլերեն</li>
+            <li>Ինֆորմատիկա</li>
+            <li>Հայոց լեզու</li>
+            <li>Հայ գրականություն</li>
+            <li>Հայոց պատմություն</li>
+            <li>Հասարակագիտություն</li>
+        </ol>
+
+    </div>
+   <div id="mas2">    
+ 
+   
+    <div>
+    <h2>ԶԱՆԳԻ ժԱՄԵՐ</h2>
+    9:00-9:45 <br>
+    9:55-10:40 <br>
+    10:50-11:35<br>
+    11:55-12:40<br>
+    12:50-13:35<br>
+    13:45-14:30<br>
+    14:40-15:25<br>
+
+    <p id="time"></p>
+</div>
+ <img src="dasaran.jpg" id="dasaran" alt="">
+</div> 
+   <script>
+        document.body.onclick = function () {
+            document.body.style.background = 'red'
+        }
+        var time = document.getElementById("time")
+        time.innerText = new Date();
+
+        setInterval(() => {
+            time.innerText = new Date();
+        }, 1000)
+
+    </script>
+
+</body>
+
+</html>
